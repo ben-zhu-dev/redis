@@ -11,6 +11,7 @@ import (
 	"github.com/miekg/dns"
 )
 
+// Test
 // Return key under which we store the message, -1 will be returned if we don't store the message.
 // Currently we do not cache Truncated, errors, zone transfers or dynamic update messages.
 func key(m *dns.Msg, t response.Type, do bool) string {
